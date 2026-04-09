@@ -543,9 +543,13 @@ textarea {
   .hero-grid,
   .section-grid,
   .contact-grid,
-  .cards-grid,
-  .values-grid {
+  .cards-grid {
     grid-template-columns: 1fr;
+  }
+
+  .gallery-grid,
+  .values-grid {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
   }
 
   .hero {
@@ -593,13 +597,19 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .gallery-grid,
+  .values-grid,
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
   .section {
     padding: 60px 0;
   }
 
   .hero-visual img,
   .contact-map img {
-    min-height: 320px;
+    min-height: 280px;
   }
 }
 
